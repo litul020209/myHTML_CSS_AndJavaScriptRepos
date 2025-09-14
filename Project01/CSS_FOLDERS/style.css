@@ -1,0 +1,56 @@
+*{
+    margin:0%;
+    padding:0%;
+    
+}
+html,body{
+    height:100%;
+    width:100%;
+}
+main{
+   height: 100%;
+    width: 100%;
+}
+section{
+    height: 100%;
+    width: 100%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(207, 215, 215);
+}
+.shape{
+    margin-top: 10px;
+    margin-left: 10px;
+    height:150px;
+    width:150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#square{
+    border: 1px solid black;
+   
+}
+#square:hover{
+    background-color: rgb(245, 68, 23);
+}
+#rambus{
+    border: 1px solid black;
+    rotate: 45deg;
+    margin-top: 40px;
+}
+#rambus h4{
+    rotate:-45deg;
+}
+#rambus:hover{
+    background-color: rgb(196, 193, 189);
+}
+#circle{
+    border: 1px solid black;
+    border-radius: 80px;
+}
+#circle:hover{
+    background-color: rgb(1, 183, 16);
+}
