@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>CSS Position Live Animation</title>
+<style>
+
+body {
+  font-family: Arial;
+  margin: 0;
+  padding-bottom: 200px;
+}
+
+/* Boxes styling */
+.box {
+  width: 120px;
+  height: 60px;
+  line-height: 60px;
+  color: white;
+  text-align: center;
+  border-radius: 8px;
+  margin: 20px;
+  font-weight: bold;
+}
+
+/* STATIC */
+.static {
+  background: #4a90e2;
+  animation: bounce 2s infinite ease-in-out;
+}
+
+/* RELATIVE */
+.relative {
+  background: orange;
+  position: relative;
+  animation: relativeMove 2s infinite alternate ease-in-out;
+}
+
+/* ABSOLUTE */
+.container {
+  position: relative;
+  height: 180px;
+  background: #ddd;
+  margin: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.absolute {
+  position: absolute;
+  background: green;
+  animation: absoluteMove 3s infinite alternate ease-in-out;
+}
+
+/* FIXED */
+.fixed {
+  position: fixed;
+  background: red;
+  top: 20px;
+  right: 20px;
+  animation: glow 1.5s infinite ease-in-out;
+}
+
+/* STICKY */
+.sticky {
+  position: sticky;
+  background: purple;
+  top: 0;
+  animation: stickyGlow 2s infinite ease-in-out;
+}
+
+/* Animations */
+
+@keyframes bounce {
+  0% {transform: translateX(0);}
+  50% {transform: translateX(40px);}
+  100% {transform: translateX(0);}
+}
+
+@keyframes relativeMove {
+  0% {top: 0; left: 0;}
+  100% {top: 30px; left: 40px;}
+}
+
+@keyframes absoluteMove {
+  0% {top: 10px; left: 10px;}
+  100% {top: 100px; left: 220px;}
+}
+
+@keyframes glow {
+  0% {box-shadow: 0 0 5px white;}
+  100% {box-shadow: 0 0 25px white;}
+}
+
+@keyframes stickyGlow {
+  0% {box-shadow: 0 0 10px yellow;}
+  100% {box-shadow: 0 0 25px yellow;}
+}
+
+</style>
+</head>
+<body>
+
+<h2 style="margin:20px;">CSS Position Property — Live Animation</h2>
+
+<!-- STATIC -->
+<div class="box static">Static</div>
+
+<!-- RELATIVE -->
+<div class="box relative">Relative</div>
+
+<!-- ABSOLUTE -->
+<div class="container">
+  <div class="box absolute">Absolute</div>
+</div>
+
+<!-- STICKY -->
+<div class="box sticky">Sticky (scroll)</div>
+
+<!-- Placeholder content for scroll -->
+<div style="height:1000px; padding:20px;">
+  Scroll down to see sticky and fixed animation working.
+</div>
+
+<!-- FIXED -->
+<div class="box fixed">Fixed</div>
+
+</body>
+</html>
