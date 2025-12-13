@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ramalenka</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+
+    <style>
+      .carousel-item img {
+        height: 550px;
+        object-fit: cover;
+      }
+
+      .custom-card {
+        height: 100%;
+      }
+
+      .custom-card img {
+        height: 200px;
+        object-fit: cover;
+      }
+
+      .festival-img {
+        height: 250px;
+        object-fit: cover;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!---------------------- Nav Bar  ---------------------->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#carouselExampleCaptions">
+          <img
+            src="https://cdn.vectorstock.com/i/1000v/20/12/letter-r-circle-logo-vector-34012012.jpg"
+            style="width: 30px; height: 30px"
+            alt="Logo"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="#carouselExampleCaptions"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about-us">About Village</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >Festival</a
+              >
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="#festival"
+                    >Prabhu Shani Dev Annual Function</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#festival">Panchudola</a>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="#festival">Raja</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#village-admin"
+                >Village Administration</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact Us</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search" onsubmit="return false;">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success bg-light" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!---------------------- Carousel Slide  ---------------------->
+    <div id="carouselExampleCaptions" class="carousel slide">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="https://images.unsplash.com/photo-1565118531796-763e5082d113?q=80&w=1170&auto=format&fit=crop"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Asthetic</h5>
+            <p>Ramalenka Cover With Mountain, Lake And The Bay Of Bengal.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://images.unsplash.com/photo-1586348943529-beaae6c28db9?q=80&w=715&auto=format&fit=crop"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Sun Set From West</h5>
+            <p>
+              The Golden Sun Set In Chilika Just Adding The Diamond To The
+              Village Panorama.
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?q=80&w=1170&auto=format&fit=crop"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>The Green Farm Field</h5>
+            <p>
+              Covering Green Blanket In Winter With That Cold Memarising The
+              Area.
+            </p>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+
+    <!---------------------- Village Administration Section ---------------------->
+    <div id="village-admin" class="container my-5">
+      <h3 class="text-center mb-4">Village Administration</h3>
+      <div class="table-responsive">
+        <table
+          class="table table-bordered table-striped table-hover text-center align-middle"
+        >
+          <thead class="table-dark">
+            <tr>
+              <th>Sl No.</th>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>Designation</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Alok</td>
+              <td>Biswal</td>
+              <td>President</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Rashmi</td>
+              <td>Biswal</td>
+              <td>Secretary</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Atyush</td>
+              <td>Biswal</td>
+              <td>Admin Head</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <!-- Village Administration Photos -->
+    <div class="container my-5">
+      <h3 class="text-center mb-4">Village Administration Members</h3>
+
+      <div class="row g-4">
+        <!-- Card 1 -->
+        <div class="col-md-4 col-sm-6">
+          <div class="card h-100 shadow">
+            <img
+              src="https://media.istockphoto.com/id/1367068216/photo/indian-farmer-stock-photo.jpg?s=612x612&w=0&k=20&c=oWgo7XuzHZAGlG55bsiyXwqvWIUBxkNMixpzORUOB7Q="
+              class="card-img-top"
+              alt="President"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title">Alok Biswal</h5>
+              <p class="card-text">President</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-md-4 col-sm-6">
+          <div class="card h-100 shadow">
+            <img
+              src="https://thumbs.dreamstime.com/b/portrait-middle-aged-indian-man-206623723.jpg"
+              class="card-img-top"
+              alt="Secretary"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title">Rashmi Biswal</h5>
+              <p class="card-text">Secretary</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-md-4 col-sm-6">
+          <div class="card h-100 shadow">
+            <img
+              src="https://static.toiimg.com/thumb/msid-56272424,width-400,height-270,resizemode-4/56272424.jpg"
+              class="card-img-top"
+              alt="Admin Head"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title">Atyush Biswal</h5>
+              <p class="card-text">Administrative Head</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!---------------------- About Village ---------------------->
+    <div id="about-us" class="container my-5">
+      <h2 class="text-center mb-4">About Ramalenka Village</h2>
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <p class="lead">
+            Ramalenka is a beautiful and culturally rich village located near
+            the Bay of Bengal. It is known for its lush green fields, serene
+            lakes, and traditional festivals celebrated with great enthusiasm.
+          </p>
+          <p class="lead">
+            The community is actively involved in initiatives such as Swachha
+            Bharat Mission, local sports tournaments, and annual Gram functions.
+            Ramalenka has a vibrant social life, emphasizing education, culture,
+            and sustainable development.
+          </p>
+          <a href="#village-admin" class="btn btn-primary mt-3"
+            >Meet Our Leaders</a
+          >
+        </div>
+        <div class="col-md-6 text-center">
+          <img
+            src="https://media.istockphoto.com/id/1292399669/photo/aerial-photograph-rural-landscape-farms-villages-picturesque-green-patchwork-pasture.jpg?s=612x612&w=0&k=20&c=6OXgL0cwGEYLphP5q__ehjZhbIjVPW2tWCVQKMh0VGQ="
+            class="img-fluid rounded shadow"
+            alt="Ramalenka Village"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!---------------------- Festivals ---------------------->
+    <div id="festival" class="container my-5">
+      <h2 class="text-center mb-4">Major Festivals of Ramalenka</h2>
+      <div class="row g-4">
+        <!-- Festival 1 -->
+        <div class="col-md-4 col-sm-6">
+          <div class="card h-100 shadow">
+            <img
+              src="https://th-i.thgim.com/public/incoming/y33jc3/article69679748.ece/alternates/FREE_1200/10745_10_6_2025_19_8_37_1_1749561122626.JPG"
+              class="card-img-top festival-img"
+              alt="Prabhu Shani Dev Annual Utsav"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title">Prabhu Shani Dev Annual Utsav</h5>
+              <p class="card-text">
+                Celebrated with devotion and rituals, this festival brings the
+                entire village together.
+              </p>
+              <span class="badge bg-primary">Jan 23</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Festival 2 -->
+        <div class="col-md-4 col-sm-6">
+          <div class="card h-100 shadow">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLJM97XXiAGPzFN0KvUNdHdpD8Iz2WRVQn-w&s"
+              class="card-img-top festival-img"
+              alt="Panchudola"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title">Panchudola</h5>
+              <p class="card-text">
+                A colorful festival marking the arrival of spring with
+                traditional dances and celebrations.
+              </p>
+              <span class="badge bg-success">Mar 15</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Festival 3 -->
+        <div class="col-md-4 col-sm-6">
+          <div class="card h-100 shadow">
+            <img
+              src="https://www.sloshout.com/blog/wp-content/uploads/Ganesh-Visarjan-1024x722.jpg"
+              class="card-img-top festival-img"
+              alt="Ganesh Chaturthi"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title">Ganesh Chaturthi</h5>
+              <p class="card-text">
+                The grand festival of Lord Ganesha celebrated with processions,
+                music, and community feasts.
+              </p>
+              <span class="badge bg-danger">Sept 20</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Village Info Section -->
+
+    <section id="about" class="container my-5">
+      <h2 class="text-center mb-4">About Ramalenka Village</h2>
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <p class="fs-5 text-justify">
+            Ramalenka is a vibrant and culturally rich village with a population
+            of approximately 2,430 residents, including 1,250 men and 1,180
+            women, maintaining a balanced sex ratio of 944 women for every 1,000
+            men. The village places a strong emphasis on education, boasting a
+            literacy rate of 85% among men and 78% among women, which reflects
+            the community’s commitment to learning and progress. Over the years,
+            Ramalenka has developed into a model of inclusive growth, where both
+            men and women actively participate in social, cultural, and
+            developmental activities. The village thrives on its traditions and
+            festivals, which bring the community together, while modern
+            initiatives in health, education, and social welfare ensure a better
+            quality of life for all residents. With a harmonious blend of
+            cultural heritage and progressive outlook, Ramalenka continues to
+            grow as a self-sustaining and inspiring village in the region.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!---------------------- Gallery ---------------------->
+
+    <section id="gallery" class="container my-5">
+      <h2 class="text-center mb-4">Village Gallery</h2>
+
+      <div class="row g-3">
+        <!-- Repeat these for all 15 images -->
+        <div class="col-6 col-md-2">
+          <img
+            src="https://thumbs.dreamstime.com/b/beauty-indian-village-13851330.jpg"
+            class="img-fluid rounded shadow"
+            alt="Gallery 1"
+          />
+        </div>
+        <div class="col-6 col-md-2">
+          <img
+            src="https://previews.123rf.com/images/kylieellway/kylieellway1504/kylieellway150400013/38714674-small-indian-village-school-in-bandhavgah-india.jpg"
+            class="img-fluid rounded shadow"
+            alt="Gallery 2"
+          />
+        </div>
+        <div class="col-6 col-md-2">
+          <img
+            src="https://content.jdmagicbox.com/comp/hosur/l2/9999p4343.4343.140418224141.b9l2/catalogue/siddharth-village-school-nallore-hosur-cbse-schools-as0bb3vjq6.jpg"
+            class="img-fluid rounded shadow"
+            alt="Gallery 3"
+          />
+        </div>
+        <div class="col-6 col-md-2">
+          <img
+            src="https://thumbs.dreamstime.com/b/gram-panchayat-anganwadi-facility-rural-dehradun-uttarakhand-july-st-city-india-government-buildings-serving-communities-390834273.jpg"
+            class="img-fluid rounded shadow"
+            alt="Gallery 4"
+          />
+        </div>
+        <div class="col-6 col-md-2">
+          <img
+            src="https://t3.ftcdn.net/jpg/05/01/47/88/360_F_501478827_eDHczzbWUeA3YZaiXDPV8milCG77yD6x.jpg"
+            class="img-fluid rounded shadow"
+            alt="Gallery 5"
+          />
+        </div>
+
+        <!-- Row 2 -->
+        <div class="col-6 col-md-2">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/d/dd/Beautiful_image_in_villages_in_india.jpg"
+            class="img-fluid rounded shadow"
+            alt="Gallery 6"
+          />
+        </div>
+        <div class="col-6 col-md-2">
+          <img
+            src="https://t3.ftcdn.net/jpg/07/84/93/70/360_F_784937071_bAZvjSbEhXbOoVswTchbaJmJisjfvlJb.jpg"
+            class="img-fluid rounded shadow"
+            alt="Gallery 7"
+          />
+        </div>
+        <div class="col-6 col-md-2">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTI61mhYIjSY8YjHLqz7fbVVgXrn3yhrZLqNA&s"
+            class="img-fluid rounded shadow"
+            alt="Gallery 8"
+          />
+        </div>
+        <div class="col-6 col-md-2">
+          <img
+            src="https://airial.travel/_next/image?url=https%3A%2F%2Fmedia-cdn.tripadvisor.com%2Fmedia%2Fphoto-w%2F0a%2Fb9%2Fd6%2F53%2Fvillage-temple.jpg&w=3840&q=75"
+            class="img-fluid rounded shadow"
+            alt="Gallery 9"
+          />
+        </div>
+        <div class="col-6 col-md-2">
+          <img
+            src="https://content.jdmagicbox.com/comp/thiruvananthapuram/k6/0471px471.x471.220419003032.m8k6/catalogue/gang-riders-edava-cricket-ground-kappil-thiruvananthapuram-sports-ground-gsd6l2aihu.jpg"
+            class="img-fluid rounded shadow"
+            alt="Gallery 10"
+          />
+        </div>
+
+        <!-- Row 3 -->
+        <div class="col-6 col-md-2">
+          <img
+            src="https://thumbs.dreamstime.com/b/indian-village-life-18326271.jpg"
+            class="img-fluid rounded shadow"
+            alt="Gallery 11"
+          />
+        </div>
+        <div class="col-6 col-md-2">
+          <img
+            src="https://img.freepik.com/premium-photo/natural-scenery-village-paddy-crops-field_709167-218.jpg"
+            class="img-fluid rounded shadow"
+            alt="Gallery 12"
+          />
+        </div>
+        <div class="col-6 col-md-2">
+          <img
+            src="https://theunstumbled.com/wp-content/uploads/2024/12/CHILIKA.jpg"
+            class="img-fluid rounded shadow"
+            alt="Gallery 13"
+          />
+        </div>
+        <div class="col-6 col-md-2">
+          <img
+            src="https://youthindiafoundation.com/img/hero/YouthIndiaFoundationBackground.webp"
+            class="img-fluid rounded shadow"
+            alt="Gallery 14"
+          />
+        </div>
+        <div class="col-6 col-md-2">
+          <img
+            src="https://images.indianexpress.com/2024/04/voters_a6b240.jpg?w=414"
+            class="img-fluid rounded shadow"
+            alt="Gallery 15"
+          />
+        </div>
+        <div class="col-6 col-md-2">
+          <img
+            src="https://images.indianexpress.com/2024/04/voters_a6b240.jpg?w=414"
+            class="img-fluid rounded shadow"
+            alt="Gallery 15"
+          />
+        </div>
+        <div class="col-6 col-md-2">
+          <img
+            src="https://images.indianexpress.com/2024/04/voters_a6b240.jpg?w=414"
+            class="img-fluid rounded shadow"
+            alt="Gallery 15"
+          />
+        </div>
+        <div class="col-6 col-md-2">
+          <img
+            src="https://images.indianexpress.com/2024/04/voters_a6b240.jpg?w=414"
+            class="img-fluid rounded shadow"
+            alt="Gallery 15"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!---------------------- Contact ---------------------->
+    <section id="contact" class="container my-5">
+      <h2 class="text-center mb-4">Contact Us</h2>
+      <div class="row justify-content-center">
+        <div class="col-lg-6">
+          <div class="card shadow p-4 rounded">
+            <form>
+              <div class="mb-3">
+                <label for="name" class="form-label">Full Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  placeholder="Enter your full name"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email Address</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="Enter your email"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea
+                  class="form-control"
+                  id="message"
+                  rows="5"
+                  placeholder="Write your message here..."
+                  required
+                ></textarea>
+              </div>
+              <div class="text-center">
+                <button type="submit" class="btn btn-primary btn-lg w-50">
+                  Submit
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!---------------------- Google Map ---------------------->
+    <section id="location" class="container my-5">
+      <h2 class="text-center mb-4">Locate Ramalenka Village</h2>
+      <div class="row align-items-center">
+        <div class="col-md-6 mb-4 mb-md-0">
+          <div class="p-4 shadow rounded bg-light">
+            <h4 class="mb-3">Village Address</h4>
+            <p><strong>AT/PO:</strong> Ramalenka</p>
+            <p><strong>Panchayat:</strong> Ramalenka</p>
+            <p><strong>Block:</strong> Krushnaprashad</p>
+            <p><strong>PS:</strong> Gada</p>
+            <p><strong>District:</strong> Puri</p>
+            <p><strong>State:</strong> Odisha</p>
+            <p><strong>PIN:</strong> 752032</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="shadow rounded">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.000000!2d86.123456!3d19.123456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0000000000000%3A0x000000000000000!2sRamalenka%2C%20Odisha!5e0!3m2!1sen!2sin!4v1234567890"
+              width="100%"
+              height="350"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            >
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!---------------------- Footer ---------------------->
+    <footer class="bg-dark text-light pt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 mb-4">
+            <h3 class="mb-3">Thank You for Visiting</h3>
+            <p>
+              We hope you enjoyed exploring Ramalenka Village – its vibrant
+              culture, festivals, and community spirit. Stay connected with us!
+            </p>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <h3 class="mb-3">Quick Links</h3>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#about-us" class="text-light text-decoration-none"
+                  >About Village</a
+                >
+              </li>
+              <li>
+                <a href="#festival" class="text-light text-decoration-none"
+                  >Festivals</a
+                >
+              </li>
+              <li>
+                <a href="#gallery" class="text-light text-decoration-none"
+                  >Gallery</a
+                >
+              </li>
+              <li>
+                <a href="#contact" class="text-light text-decoration-none"
+                  >Contact Us</a
+                >
+              </li>
+              <li>
+                <a href="#village-admin" class="text-light text-decoration-none"
+                  >Village Admin</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-4 col-md-12 mb-4">
+            <h3 class="mb-3">Contact Info</h3>
+            <p>
+              <strong>Address:</strong> AT/PO - Ramalenka, Panchayat -
+              Ramalenka, Block - Krushnaprashad, PS - Gada, Dist - Puri, State -
+              Odisha, PIN - 752032
+            </p>
+            <p><strong>Email:</strong> info@ramalenka.com</p>
+            <p><strong>Phone:</strong> +91 9876543210</p>
+            <div class="mt-3">
+              <a href="#" class="text-light me-3 fs-4"
+                ><i class="bi bi-facebook"></i
+              ></a>
+              <a href="#" class="text-light me-3 fs-4"
+                ><i class="bi bi-twitter"></i
+              ></a>
+              <a href="#" class="text-light me-3 fs-4"
+                ><i class="bi bi-instagram"></i
+              ></a>
+              <a href="#" class="text-light fs-4"
+                ><i class="bi bi-youtube"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <hr class="bg-light" />
+        <div class="text-center pb-3">
+          &copy; 2025 Ramalenka Village. All rights reserved. Designed with ❤️
+          by Our Team.
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
